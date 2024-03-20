@@ -31,6 +31,9 @@ kotlin {
     sourceSets {
         val desktopMain by getting
         
+        commonTest.dependencies {
+            implementation(libs.kotlin.test)
+        }
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)

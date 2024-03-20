@@ -5,3 +5,7 @@ import androidx.compose.ui.window.CanvasBasedWindow
 fun main() {
     CanvasBasedWindow(canvasElementId = "ComposeTarget") { App() }
 }
+
+actual fun copy(string: String) {
+    TODO("implement")
+}
